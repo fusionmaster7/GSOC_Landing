@@ -90,7 +90,6 @@ class Info extends React.Component{
                     </Card>
                 </Col>
             </Row>
-            <ParticlesBg type="color" bg={true} />
         </Container>
         );
     }

@@ -35,7 +35,6 @@ class Mentor extends React.Component{
                         </Card>
                     </Col>
                 </Row>
-                <ParticlesBg type="square" bg={true} />
             </Container>
         );
     }
