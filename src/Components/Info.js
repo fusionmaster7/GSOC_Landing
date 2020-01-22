@@ -1,6 +1,5 @@
 import React from 'react';
-import ParticlesBg from 'particles-bg';
-import {Container,Row,Col,Card,Accordion} from 'react-bootstrap';
+import {Row,Col,Card,Accordion} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './Info.css'
 
@@ -8,10 +7,9 @@ import './Info.css'
 class Info extends React.Component{
     render(){
         return(
-            <Container>
             <Row>
-                <Col s={4}>
-                    <Card>
+                <Col xs={12} md={4} id="info-card">
+                    <Card className="shadow">
                         <Card.Body>
                             <Card.Title id="card-heading">What is GSOC?</Card.Title>
                                 <hr />
@@ -24,8 +22,8 @@ class Info extends React.Component{
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col s={4}>
-                    <Card>
+                <Col xs={12} md={4} id="info-card">
+                    <Card className="shadow">
                         <Card.Body>
                             <Card.Title id="card-heading">Origin of GSOC</Card.Title>
                             <hr />
@@ -37,8 +35,8 @@ class Info extends React.Component{
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col s={4}>
-                    <Card>
+                <Col xs={12} md={4} id="info-card">
+                    <Card className="shadow">
                         <Card.Body>
                             <Card.Title id="card-heading">Benefits of GSOC</Card.Title>
                             <hr />
@@ -90,7 +88,6 @@ class Info extends React.Component{
                     </Card>
                 </Col>
             </Row>
-        </Container>
         );
     }
 }
