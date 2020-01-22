@@ -3,6 +3,8 @@ import {Button,Jumbotron} from 'react-bootstrap';
 import './Begin.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import Info from './Info';
+import Mentor from './Mentor';
+import {Route,Link,BrowserRouter as Router} from 'react-router-dom';
 
 //Component to render the Begin Page
 class Begin extends React.Component{
@@ -10,7 +12,7 @@ class Begin extends React.Component{
         return(
             <div>
                 <Jumbotron>
-                    <h1 id="heading">Hey There</h1>
+                    <h1 id="heading">Hey,</h1>
                     <h2 id="heading">GAWDS is organising a workshop on Google Summer of Code!</h2>
                     <br />
                     <div style={{textAlign:"center"}}>
@@ -18,7 +20,10 @@ class Begin extends React.Component{
                         <Button variant="primary">Mentor Info</Button>
                     </div>
                 </Jumbotron>
-                <Info />
+                <Router>
+                    <Route exact path ='/' component={Info}></Route>
+                    <Route path='/mentor' component={Mentor}></Route>
+                </Router>
             </div>
         );
     }
