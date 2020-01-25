@@ -6,10 +6,12 @@
     font-family: 'Open Sans',sans-serif;
     font-weight: bold;
     font-size: 30px;
+    color: #54f6e3;
 }
 p{
     font-family: 'Lato',sans-serif;
     font-size: 18px;
+    color: white;
 }
 #benefits{
     font-family: 'Lato',sans-serif;
@@ -26,4 +28,7 @@ p{
 #info-card{
     margin-top:10px;
     margin-bottom: 10px;
+}
+#mycard{
+    background-color: #2b3357;
 }

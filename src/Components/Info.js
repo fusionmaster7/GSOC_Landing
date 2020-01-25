@@ -7,9 +7,9 @@ import './Info.css'
 class Info extends React.Component{
     render(){
         return(
-            <Row>
+            <Row className="wow bounce-in">
                 <Col xs={12} md={4} id="info-card">
-                    <Card className="shadow">
+                    <Card className="shadow" id="mycard">
                         <Card.Body>
                             <Card.Title id="card-heading">What is GSOC?</Card.Title>
                                 <hr />
@@ -23,7 +23,7 @@ class Info extends React.Component{
                     </Card>
                 </Col>
                 <Col xs={12} md={4} id="info-card">
-                    <Card className="shadow">
+                    <Card className="shadow" id="mycard">
                         <Card.Body>
                             <Card.Title id="card-heading">Origin of GSOC</Card.Title>
                             <hr />
@@ -36,7 +36,7 @@ class Info extends React.Component{
                     </Card>
                 </Col>
                 <Col xs={12} md={4} id="info-card">
-                    <Card className="shadow">
+                    <Card className="shadow" id="mycard">
                         <Card.Body>
                             <Card.Title id="card-heading">Benefits of GSOC</Card.Title>
                             <hr />
@@ -45,8 +45,8 @@ class Info extends React.Component{
                                     Cracking GSOC offers the following Advantages:
                                 </p>
                                 <Accordion>
-                                    <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="0">
+                                    <Card id="mycard">
+                                        <Accordion.Toggle as={Card.Header} eventKey="0" style={{color:'#54f6e3',fontWeight:'bold'}}>
                                             Community
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">
@@ -57,8 +57,8 @@ class Info extends React.Component{
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
-                                    <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="1">
+                                    <Card id="mycard">
+                                        <Accordion.Toggle as={Card.Header} eventKey="1" style={{color:'#54f6e3',fontWeight:'bold'}}>
                                             Career
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1">
@@ -70,8 +70,8 @@ class Info extends React.Component{
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
-                                    <Card>
-                                        <Accordion.Toggle as ={Card.Header} eventKey="2">
+                                    <Card id="mycard">
+                                        <Accordion.Toggle as ={Card.Header} eventKey="2" style={{color:'#54f6e3',fontWeight:'bold'}}>
                                             Chance with Google itself.
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="2">

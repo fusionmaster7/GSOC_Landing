@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ParticlesBg from 'particles-bg';
 import Begin from './Components/Begin';
+import './index.css';
 
 class App extends React.Component{
     render(){
         return(
             <div>
-                <ParticlesBg type={"cobweb"} bg={true} />
                 <Begin />
             </div>
         );
