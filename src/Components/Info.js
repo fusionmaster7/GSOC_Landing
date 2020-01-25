@@ -7,7 +7,7 @@ import './Info.css'
 class Info extends React.Component{
     render(){
         return(
-            <Row className="wow bounce-in">
+            <Row style={{paddingLeft:"30px"}}>
                 <Col xs={12} md={4} id="info-card">
                     <Card className="shadow" id="mycard">
                         <Card.Body>

@@ -3,6 +3,14 @@
     font-family: 'Open Sans',sans-serif;
 }
 #jumbo{
-    background-color: #2b3357;
+    background-color: #202438;
     color: #54f6e3;
+}
+h1{
+    font-weight: 500;
+    font-size: 48px;
+}
+h2{
+    font-weight: 200;
+    font-size: 36px;
 }

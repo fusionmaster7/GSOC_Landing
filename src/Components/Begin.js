@@ -9,11 +9,13 @@ class Begin extends React.Component{
     render(){
         return(
             <div>
-                <Jumbotron className="text-center" id="jumbo">
-                    <h1 id="heading">Hey,</h1>
-                    <h2 id="heading">GAWDS is organising a workshop on Google Summer of Code!</h2>
-                </Jumbotron>
                 <Container>
+                    <Jumbotron id="jumbo">
+                        <h1 id="heading">Hey,</h1>
+                        <h2 id="heading">GAWDS is organising a<br />
+                        workshop on <br />
+                        Google Summer of Code!</h2>
+                    </Jumbotron>
                     <Info />
                     <hr />
                 </Container>
